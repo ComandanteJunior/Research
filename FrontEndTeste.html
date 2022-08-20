@@ -1,0 +1,117 @@
+
+    <div class="wrapper">
+        <h1 class="heading">Research #1 -FrontEnd Básico.</h1>
+        <h2 class="sub-cabeçalho">Research HTML-5.</h2>
+
+        <dl>
+
+            <div class="desc-item">
+                <dt class="desc-term">&lt;del&gt; &amp; &lt;ins&gt;</dt>
+            <dd class=""desc-details">O Conteúdo foi removido/adicionado.</dd>
+          
+            </div>
+        <div class="desc-item">
+
+<dt class="desc-term">&lt;detais&gt; &amp; &lt;summary&gt;</dt>
+
+<dd class="desc-details">Amostrar/Esconder o Conteúdo</dd>
+
+
+        </div>
+
+        <div class="desc-item">
+<dt class="desc-term">&lt;gt;&amp; &lt;sup&gt;</dt>
+
+<dd class="desc-details">Define o Sub-Escrito ou Super-Escrito texto.</dd>
+
+
+        </div>
+        <div class="desc-item">
+            <dt class="desc-term">&lt;dt&gt; &amp; &lt;dd&gt;</dt>
+
+            <dd class="desc-details">Termo com descrição correspondente.</dd>
+        </div>
+    </dl>
+</div>    
+<style>
+{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    background-color: #333745;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: auto;
+}
+
+.heading {
+    font-size: 60px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.sub-heading {
+    font-size: 35px;
+    line-height: 1.4;
+    color: #c2d0bd;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 10px 0 30px;
+}
+
+.desc-item {
+    position: relative;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+    border: 3px solid #777;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.desc-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.desc-term,
+.desc-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 50px;
+}
+
+.open .desc-term {
+    transform: translateY(-100%);
+}
+
+.desc-term {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 38px;
+    line-height: 1.2;
+    color: #f1f1f1;
+    background-color: #111;
+    transition: transform 300ms ease-out;
+}
+
+.desc-details {
+    height: 100%;
+    font-size: calc(20px + 0.5vw);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background-color: #fff;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.7) inset;
+}
