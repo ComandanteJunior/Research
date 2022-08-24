@@ -1,5 +1,7 @@
 /* Jogo do Carro feito no dia 23/08/22, Levou cerca de 1 hora para correção e desenvolvimento */
 /* Código: C++  / Github: ComandanteJunior */
+/* Não foi desenvolvido por mim, foi copiado de um vídeo apenas para o meu aprendizado e melhoria na programação.*/
+/* A Tradução por sua vez, foi efetuada por mim. */
 #include<iostream>
 #include<conio.h>
 #include<dos.h>
